@@ -30,7 +30,7 @@ exports.deleteBook=async (req,res)=>{
             })
         }
 
-        //Otherwise delete the entry which matched this id
+        //Otherwise delete the book which matched this id
         const deletedBook=await Dictionary.destroy({
             where:{
                 id:id
